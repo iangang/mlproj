@@ -18,9 +18,9 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_validate
 from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import KFold
-# from sklearn.model_selection import RepeatedKFold
+from sklearn.model_selection import RepeatedKFold
 from sklearn.model_selection import StratifiedKFold
-# from sklearn.model_selection import RepeatedStratifiedKFold
+from sklearn.model_selection import RepeatedStratifiedKFold
 # from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from sklearn.metrics import make_scorer
@@ -72,15 +72,6 @@ lr_l2_lbfgs = LogisticRegression(penalty = "l2", solver = "lbfgs")
 lr_l2_liblinear = LogisticRegression(penalty = "l2", solver = "liblinear")
 lr_l2_sag = LogisticRegression(penalty = "l2", solver = "sag")
 lr_l2_saga = LogisticRegression(penalty = "l2", solver = "saga")
-
-# logistic regression with cross validation
-lr_cv_l1_liblinear = LogisticRegressionCV(penalty = "l1", solver = "liblinear")
-lr_cv_l1_saga = LogisticRegressionCV(penalty = "l1", solver = "saga")
-lr_cv_l2_newton = LogisticRegressionCV(penalty = "l2", solver = "newton-cg")
-lr_cv_l2_lbfgs = LogisticRegressionCV(penalty = "l2", solver = "lbfgs")
-lr_cv_l2_liblinear = LogisticRegressionCV(penalty = "l2", solver = "liblinear")
-lr_cv_l2_sag = LogisticRegressionCV(penalty = "l2", solver = "sag")
-lr_cv_l2_saga = LogisticRegressionCV(penalty = "l2", solver = "saga")
 
 # logistic regression using sgd algorithm
 lr_sgd_l1 = SGDClassifier(loss = "log", penalty = "l1")
@@ -242,9 +233,17 @@ pprint(cv_scores["train_accuracy"])
 # KFold
 # RepeatedKFold
 # ===================================================
+cv = KFold(n_splits = cv_5_folds)
+for i, (train, validate) in enumerate(cv.split(X = X, y = y)):
+	print("分裂次数: ", i)
+	print("Train Index: ", train)
+	print("Validate Index: ", validate)
+	indices = np.array([np.nan] * len(X))
+	indices[train] = 1
+	indices[validate] = 0
+	print("KFold splited Index: ", indices)
 
-
-
+repeated_kfold_cv = RepeatedKFold(n_splits = cv_5_folds, n_repeats = 100)
 
 
 
@@ -267,12 +266,76 @@ pprint(cv_scores["train_accuracy"])
 # ========================================================================================================
 # GridSearchCV, RandomizedSearchCV
 # ========================================================================================================
-param_grid = {
+# Tips for parameter search
+	# specifying an objective metric
+	# specifying multiple metircs for evaluation
+	# composite estimators and parameter spaces
+	# Model selection: development and evalution
+	# Parallelism
+	# Robustness to failure
 
+param_grid_lr_l1 = {
+	"penalty": ["l1"],
+	"dual": [False],
+	"tol": [10e-4, 10e-5, 10e-6],
+	"C": [0.001, 0.01, 0.1, 1.0, 10],
+	"solver": ["liblinear", "saga"],
+}
+
+param_grid_lr_l2 = {
+	"penalty": ["l2"],
+	"dual": [False],
+	"tol": [10e-4, 10e-5, 10e-6],
+	"C": [0.001, 0.01, 0.1, 1.0, 10],
+	"solver": ["newton-cg", "lbfgs", "liblinear", "sag", "saga"]
 }
 
 param_random = {
 
 }
 
+def GridSearch_CV():
+	gscv = GridSearchCV(estimator = model,
+						param_grid = param_grid,
+						scoring = scoring,
+						n_jobs = None,
+						refit = is_refit,
+						cv = cv_inner,
+						return_train_score = True)
+	gscv.fit(X, y)
+	# cv_result = gscv.cv_results_
+	# best_estimator = gscv.best_estimator_
+	# best_index = gscv.best_index_
+	# best_params = gscv.best_params_
+	# best_score = gscv.best_score_
+	# scorer = gscv.scorer_
+	# n_splits = gscv.n_splits_
+	# refit_time = gscv.refit_time_
+	nested_scores = cross_validation(gscv, X, y,
+									 method = method_cv,
+									 cv = cv_outer,
+									 scoring = scoring)
+	gen_scores = nested_scores.mean()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ==============================================================================
+# logistic regression with cross validation
+lr_cv_l1_liblinear = LogisticRegressionCV(penalty = "l1", solver = "liblinear")
+lr_cv_l1_saga = LogisticRegressionCV(penalty = "l1", solver = "saga")
+lr_cv_l2_newton = LogisticRegressionCV(penalty = "l2", solver = "newton-cg")
+lr_cv_l2_lbfgs = LogisticRegressionCV(penalty = "l2", solver = "lbfgs")
+lr_cv_l2_liblinear = LogisticRegressionCV(penalty = "l2", solver = "liblinear")
+lr_cv_l2_sag = LogisticRegressionCV(penalty = "l2", solver = "sag")
+lr_cv_l2_saga = LogisticRegressionCV(penalty = "l2", solver = "saga")
