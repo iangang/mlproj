@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a4a1d0-e8bd-4af1-a4ef-dd1f47c435b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_with_penalty.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mltool/modelSelection/cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mltool/modelSelection/cv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlmodel/clustering/KMeans_clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlmodel/clustering/KMeans_clustering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mltool/test/cross validation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../mltool/test/cross validation.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,60 +14,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="219" column="32" lean-forward="true" selection-start-line="219" selection-start-column="32" selection-end-line="219" selection-end-column="32" />
-              <folding>
-                <element signature="e#48#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_with_penalty.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6080">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="e#72#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../mltool/modelSelection/cv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="187" column="45" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/anaconda3/lib/python3.7/site-packages/sklearn/model_selection/_search.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="840" column="49" lean-forward="true" selection-start-line="840" selection-start-column="49" selection-end-line="840" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,7 +47,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mltool" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_with_penalty.py" root0="SKIP_INSPECTION" />
@@ -103,14 +64,17 @@
         <option value="$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py" />
         <option value="$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_with_penalty.py" />
         <option value="$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py" />
+        <option value="$PROJECT_DIR$/mlmodel/clustering/KMeans_clustering.py" />
+        <option value="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering.py" />
+        <option value="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering_example.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="2705" />
     <option name="y" value="24" />
     <option name="width" value="1221" />
-    <option name="height" value="1027" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,7 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,28 +96,15 @@
             </path>
             <path>
               <item name="mlproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mltool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mlproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mltool" type="462c0819:PsiDirectoryNode" />
-              <item name="modelSelection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mlproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mltool" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mlproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mltool" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="CV" type="462c0819:PsiDirectoryNode" />
+              <item name="mlproj" type="462c0819:PsiDirectoryNode" />
+              <item name="mlmodel" type="462c0819:PsiDirectoryNode" />
+              <item name="clustering" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,7 +133,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Nest_nonNested_CV">
+  <component name="RunManager" selected="Python.Hierarchical_clustering_example">
+    <configuration name="Hierarchical_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mlproj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mlmodel/clustering" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Hierarchical_clustering_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mlproj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mlmodel/clustering" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Nest_nonNested_CV" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mltool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -228,22 +222,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in /home/wangzhefeng/project/mlenv/mlproj/mlmodel/LogisticRegression/__init__.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="mlproj" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mlmodel/LogisticRegression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/mlmodel/LogisticRegression/__init__.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in /home/wangzhefeng/project/mlenv/mltool/test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="mltool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,10 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Hierarchical_clustering_example" />
+        <item itemvalue="Python.Hierarchical_clustering" />
         <item itemvalue="Python.Nest_nonNested_CV" />
         <item itemvalue="Python.logistic_regression_with_penalty" />
         <item itemvalue="Python tests.pytest in /home/wangzhefeng/project/mlenv/mltool/test.py" />
-        <item itemvalue="Python tests.pytest in /home/wangzhefeng/project/mlenv/mlproj/mlmodel/LogisticRegression/__init__.py" />
       </list>
     </recent_temporary>
   </component>
@@ -282,6 +261,7 @@
       <workItem from="1555753819802" duration="18089000" />
       <workItem from="1555824396134" duration="2384000" />
       <workItem from="1555833945459" duration="17422000" />
+      <workItem from="1555938827533" duration="6849000" />
     </task>
     <servers />
   </component>
@@ -309,18 +289,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37895000" />
+    <option name="totallyTimeSpent" value="44744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2705" y="24" width="1221" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="2705" y="24" width="1221" height="1056" extended-state="4" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.025575448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35412025" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.03236246" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,8 +313,8 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.4799659" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32992327" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -366,6 +345,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mlproj$logistic_regression_with_penalty.coverage" NAME="logistic_regression_with_penalty Coverage Results" MODIFIED="1555834528571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mlmodel/LogisticRegression" />
+    <SUITE FILE_PATH="coverage/mlproj$Hierarchical_clustering.coverage" NAME="Hierarchical_clustering Coverage Results" MODIFIED="1555943841030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mlmodel/clustering" />
+    <SUITE FILE_PATH="coverage/mlproj$Hierarchical_clustering_example.coverage" NAME="Hierarchical_clustering_example Coverage Results" MODIFIED="1555946786741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mlmodel/clustering" />
     <SUITE FILE_PATH="coverage/mlproj$pytest_in_test_py.coverage" NAME="pytest in test.py Coverage Results" MODIFIED="1555763341678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../mltool" />
     <SUITE FILE_PATH="coverage/mlproj$Nest_nonNested_CV.coverage" NAME="Nest_nonNested_CV Coverage Results" MODIFIED="1555854931130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../mltool/test/CV" />
     <SUITE FILE_PATH="coverage/mlproj$pytest_in___init___py.coverage" NAME="pytest in __init__.py Coverage Results" MODIFIED="1555758737519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mlmodel/LogisticRegression" />
@@ -433,43 +414,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/anaconda3/lib/python3.7/site-packages/sklearn/model_selection/_search.py">
+    <entry file="file://$PROJECT_DIR$/../mltool/modelSelection/cv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="840" column="49" lean-forward="true" selection-start-line="840" selection-start-column="49" selection-end-line="840" selection-end-column="49" />
+        <state relative-caret-position="2831">
+          <caret line="187" column="45" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py">
+    <entry file="file:///usr/local/anaconda3/lib/python3.7/site-packages/sklearn/model_selection/_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="219" column="32" lean-forward="true" selection-start-line="219" selection-start-column="32" selection-end-line="219" selection-end-column="32" />
+        <state relative-caret-position="15219">
+          <caret line="840" column="49" selection-start-line="840" selection-start-column="49" selection-end-line="840" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#48#73#0" expanded="true" />
+            <element signature="e#72#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mlmodel/SupportVectorMachine/SVM_with_penalty.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6080">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="19">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mltool/modelSelection/cv.py">
+    <entry file="file://$PROJECT_DIR$/mlmodel/LogisticRegression/logistic_regression_with_penalty.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="187" column="45" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="379">
+          <caret line="219" column="32" selection-start-line="219" selection-start-column="32" selection-end-line="219" selection-end-column="32" />
           <folding>
-            <element signature="e#72#76#0" expanded="true" />
+            <element signature="e#48#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlmodel/clustering/KMeans_clustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-636">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#72#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlmodel/clustering/Hierarchical_clustering_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#48#52#0" expanded="true" />
           </folding>
         </state>
       </provider>

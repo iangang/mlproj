@@ -10,19 +10,19 @@ import time
 import warnings
 import numpy as np
 import matplotlib.pyplot as plt
-# %matplotlib inline
 from sklearn import datasets
 from sklearn import cluster
 from sklearn import mixture
 from sklearn.neighbors import kneighbors_graph
 from sklearn.preprocessing import StandardScaler
 from itertools import cycle, islice
+
 np.random.seed(0)
 
 
-# ---------------------------------------------------------------
+# ======================================================================================
 # data
-# ---------------------------------------------------------------
+# ======================================================================================
 n_samples = 1500
 noise_circels = datasets.make_circles(n_samples = n_samples, factor = 0.5, noise = 0.05)
 noise_moons = datasets.make_moons(n_samples = n_samples, noise = 0.05)
@@ -39,6 +39,8 @@ aniso = (X_aniso, y)
 
 # blobs with varied variances
 varied = datasets.make_blobs(n_samples = n_samples, cluster_std = [1.0, 2.5, 0.5], random_state = random_state)
+
+
 
 # ---------------------------------------------------------------
 # cluser parameters
@@ -60,6 +62,9 @@ dataset = [
     (blobs, {}),
     (no_structure, {})
 ]
+
+
+
 
 
 
