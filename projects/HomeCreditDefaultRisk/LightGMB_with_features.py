@@ -20,12 +20,10 @@ __author__ = "wangzhefeng"
 		- Logistic Regression with LASSO, Ridge, Elastic Net
 		- CART
 		- SVM
-
-
-	----------
+	-----------------
 	Build 2018-10-15:
-	V 1.0 
-	
+	-----------------
+	V 1.0
 """
 
 
