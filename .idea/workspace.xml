@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a4a1d0-e8bd-4af1-a4ef-dd1f47c435b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mltool/featureEngine/FeatureTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mlproj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mlproj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/kaggle_proj/pro_Home_Credit_Default_Risk/LightGMB_with_features.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/kaggle_proj/pro_Home_Credit_Default_Risk/ML_Home_Credit_Default_Risk .ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/kaggle_proj/pro_Home_Credit_Default_Risk/load_to_sqlserver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mltool/test/CV/Nest_nonNested_CV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pysci/.idea/pysci.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../pysci/.idea/pysci.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +25,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,13 +105,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pysci" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mlnlp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -284,6 +277,7 @@
       <workItem from="1556463581178" duration="601000" />
       <workItem from="1556464341030" duration="750000" />
       <workItem from="1556465380777" duration="1136000" />
+      <workItem from="1556551684197" duration="214000" />
     </task>
     <servers />
   </component>
@@ -311,12 +305,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57271000" />
+    <option name="totallyTimeSpent" value="57485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1264" y="24" width="1296" height="1056" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25721154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26201922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
