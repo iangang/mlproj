@@ -1,26 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-'''
-# ************************************************************
-特征工程
-# ************************************************************
-缺失值填充
-将用数值表示的类别型变量转换为类别型变量
-将类别型变量转换为有序类别型变量
-Box-Cox变换: 将分布为偏态分布的变量转换为近似正态分布
-将类别型变量转换为哑变量
-
-# ************************************************************
-回归模型
-# ************************************************************
-Lasso
-XGBoost
-LightGBM
-'''
-
-
 # ************************************************************
 # import some necessary libraries
 # ************************************************************
@@ -34,14 +14,15 @@ import warnings
 def ignore_warn(*args, **kwargs):
 	pass
 warnings.warn = ignore_warn	# ignore any warning
-
 from scipy import stats
 from scipy.stats import norm, skew
-
 pd.set_option("display.float_format", lambda x: '{:.3f}'.format(x))
-
 # from subprocess import check_output
 # print(check_output(['ls', 'E:\project\projects\datamining\kaggle\HousePrice\data']).decode('utf8'))
+
+
+
+
 
 
 # *************************************************************************************
@@ -94,14 +75,14 @@ train = train.drop(outliers, axis = 0)
 # SalePrice 因变量分析
 # *******************************************************
 # Histogram of SalePrice
-# sns.distplot(train['SalePrice'], fit = norm);
+sns.distplot(train['SalePrice'], fit = norm);
 # Get the fitted parameters used by function
-# (mu, sigma) = norm.fit(train['SalePrice'])
-# print('\n mu = {:.2f} and sigma = {:.2f}\n'.format(mu, sigma))
+(mu, sigma) = norm.fit(train['SalePrice'])
+print('\n mu = {:.2f} and sigma = {:.2f}\n'.format(mu, sigma))
 # Plot the distribution
-# plt.legend(['Normal dist. ($\mu=$ {:.2f} and $\sigma={:.2f})'.format(mu, sigma)], loc = "best")
-# plt.ylabel("Frequency")
-# plt.title("SalePrice distribution")
+plt.legend(['Normal dist. ($\mu=$ {:.2f} and $\sigma={:.2f})'.format(mu, sigma)], loc = "best")
+plt.ylabel("Frequency")
+plt.title("SalePrice distribution")
 
 # Get the QQ plot
 # fig = plt.figure()
