@@ -300,7 +300,40 @@ print("Raw", y_pred_raw_valss)
   - MSLE
   - MedianAbsoluteError
 * Classification
+  - Logloss
+  - CrossEntropy
+  - Precision
+  - Recall
+  - F1
+  - BalancedAccuracy
+  - BalancedErrorRate
+  - MCC
+  - Accuracy
+  - CtrFactor
+  - AUC
+  - NormalizedGini
+  - BriefScore
+  - HingeLoss
+  - HammingLoss
+  - ZeroOneLoss
+  - Kapp
+  - WKappa
+  - LogLikelihoodOfPrediction
 * Multiclassification
+  - MultiClass
+  - MultiClassOneVsAll
+  - Precision
+  - Recall
+  - F1
+  - TotalF1
+  - MCC
+  - Accuracy
+  - HingeLoss
+  - HammingLoss
+  - ZeroOneLoss
+  - Kappa
+  - WKappa
+  - 
 * Ranking
 
 
