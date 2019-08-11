@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+
 import pandas as pd
 import numpy as np
 from sklearn.metrics import f1_score
@@ -9,6 +10,7 @@ from sklearn.feature_selection import chi2, SelectPercentile
 from sklearn.preprocessing import OneHotEncoder
 from scipy import sparse
 from lightgbm import LGBMClassifier
+from xgboost import XGBClassifier
 import warnings
 warnings.filterwarnings('ignore')
 import logging
@@ -237,30 +239,14 @@ def lgb_f1(labels, preds):
 # ----------------------------------
 # 定义模型(模型调参)
 # ----------------------------------
-lgb = LGBMClassifier(random_seed = 2019, 
-                     n_jobs = -1, 
-                     objective = 'binary',
-                     learning_rate = 0.1, 
-                     n_estimators = 4000, 
-                     num_leaves = 64, 
+xgbc = XGBClassifier(random_seed = 2019,
+                     n_jobs = -1,
+                     objective = "binary",
+                     learning_rate = 0.1,
+                     n_estimators = 4000,
+                     num_leaves = 64,
                      max_depth = -1,
-                     min_child_samples = 20, 
-                     min_child_weight = 9, 
-                     subsample_freq = 1,
-                     subsample = 0.8, 
-                     colsample_bytree = 0.8,
-                     reg_alpha = 1, 
-                     reg_lambda = 5)
-
-lgb.fit(
-    train_x,
-    train_y,
-    eval_set = [(train_x, train_y), (val_x, val_y)],
-    eval_names = ['train', 'val'],
-    eval_metric = lgb_f1,
-    early_stopping_rounds = 100,
-    verbose = 10,
-)
+                     min_child_samples = 20)
 
 print('best score', lgb.best_score_)
 
