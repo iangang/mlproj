@@ -1,0 +1,136 @@
+---
+title: "cluster_iris"
+author: "zfwang"
+date: "2019年1月14日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# **数据**
+
+```{r}
+# data
+iris = datasets::iris
+
+# split data and label
+iris2 = iris[, -5]
+species_labels = iris[, 5]
+head(iris2)
+species_labels
+```
+
+
+# **自变量散点图矩阵**
+
+```{r}
+# get nice colors
+library(colorspace)
+species_col = rev(rainbow_hcl(3))[as.numeric(species_labels)]
+
+# Plot a SPLOM
+pairs(iris2, 
+      col = species_col,
+      lower.panel = NULL,
+      cex.labels = 2,
+      pch = 19,
+      cex = 1.2)
+
+# Add a legend
+par(xpd = TRUE)
+legend(x = 0.05,
+       y = 0.4,
+       cex = 1,
+       legend = as.character(levels(species_labels)),
+       fill = unique(species_col))
+par(xpd = NA)
+```
+
+> * 从散点图矩阵中可以看出，`Setosa`和`Versicolor`、`Virginica`明显不同：`Setosa`有较小的花瓣(petal)长度和宽度，而`Versicolor`、`Virginica`两种花不容易根据他们的花萼和花瓣的长度和宽度分离开来
+
+
+# **花萼、花瓣的平行坐标图(parallel coordinates plot)**
+
+
+```{r}
+par(las = 1, 
+    mar = c(4.5, 3, 3, 2) + 0.1, 
+    cex = 0.8)
+MASS::parcoord(iris2, 
+               col = species_col, 
+               var.label = TRUE, 
+               lwd = 2)
+
+## Add Title
+title("Parallel coordinates plot of the Iris data")
+
+# Add a legend
+par(xpd = TRUE)
+legend(x =1.75, 
+       y = -0.15, 
+       cex = 1,
+       legend = as.character(levels(species_labels)),
+       fill = unique(species_col),
+       horiz = TRUE)
+```
+
+
+> 从上面的平行坐标图中也可以看出，`Setosa`有较小的花瓣(petal)长度和宽度，而`Versicolor`、`Virginica`两种花不容易根据他们的花萼和花瓣的长度和宽度分离开来
+
+
+# **层次聚类(Hierarchical Clustering)**
+
+* hierarchical clustering method: "complete"
+* cluserting data visualize
+
+```{r}
+# 计算距离
+d_iris = dist(iris2)
+
+# 层次聚类
+hc_iris = hclust(d_iris, method = "complete")
+iris_species = rev(levels(species_labels))
+```
+
+
+```{r}
+library(dendextend)
+
+dend = as.dendrogram(hc_iris) %>%
+    rotate(1:150) %>%
+    color_branches(k = 3)
+
+labels_colors(dend) = rainbow_hcl(3)[sort_levels_values(as.numeric(iris[, 5][order.dendrogram(dend)]))]
+labels(dend) = paste(as.character(iris[, 5])[order.dendrogram(dend)], "(", labels(dend), ")", sep = "")
+dend = hang.dendrogram(dend, hang_height = 0.1)
+dend = set(dend, "labels_cex", 0.5)
+
+# Plot
+par(mar = c(3, 3, 3, 7))
+plot(dend, 
+     main = "Clustered Iris data set(the labels give the true flower species)",
+     horiz = TRUE, 
+     nodePar = list(cex = 0.007))
+legend("topleft", legend = iris_species, fill = rainbow_hcl(3))
+```
+
+
+```{r}
+par(mar = rep(0, 4))
+circlize_dendrogram(dend)
+```
+
+
+
+
+
+
+
+
+
+
+
+

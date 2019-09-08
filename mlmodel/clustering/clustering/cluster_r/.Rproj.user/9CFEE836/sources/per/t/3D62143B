@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548663564728.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "955759943",
+    "id" : "3D62143B",
+    "lastKnownWriteTime" : 1459522864,
+    "last_content_update" : 1459522864,
+    "path" : "E:/DataScience/clustering/cluster_r/clustering.R",
+    "project_path" : "clustering.R",
+    "properties" : {
+        "cursorPosition" : "24,23",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+
+# --------------------------------------------------
+# K-means
+# PAM
+# --------------------------------------------------
+
+
+## K-means
+
+# data
+set.seed(0)
+df = iris[, -5]
+
+# clustering
+cl = kmeans(df, 3)
+cl
+
+if(!require(flexclust)) install.packages("flexclust")
+clk = flexclust::kcca(df, k = 3)
+clk
+clk@centers
+summary(clk)
+
+plot(df, col = cl$cluster, main = "K-means Cluster")
+points(cl$centers, col = 1:3, pch = 10, cex = 4)
+points(clk@centers, col = 3:4, pch = 10, cex = 4)

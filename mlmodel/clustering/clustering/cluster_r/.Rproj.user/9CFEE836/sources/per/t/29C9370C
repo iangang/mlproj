@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548663559135.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1001648002",
+    "id" : "29C9370C",
+    "lastKnownWriteTime" : 1460632930,
+    "last_content_update" : 1460632930,
+    "path" : "E:/DataScience/clustering/cluster_r/dendextend.R",
+    "project_path" : "dendextend.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
