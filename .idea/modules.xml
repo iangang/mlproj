@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mlproj.iml" filepath="$PROJECT_DIR$/.idea/mlproj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../mltool/.idea/mltool.iml" filepath="$PROJECT_DIR$/../mltool/.idea/mltool.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pysci/.idea/pysci.iml" filepath="$PROJECT_DIR$/../pysci/.idea/pysci.iml" />
     </modules>
   </component>
